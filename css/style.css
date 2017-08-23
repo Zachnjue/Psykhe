@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+
 /*Navigation Bar Design*/
 ul{
   list-style: none;;
@@ -65,4 +67,135 @@ left: 600px;
   left: 700px;
 
 
+}
+
+/*chatroom section*/
+/*colum2 */
+.whole {
+  height: 750px;
+  padding: 0;
+}
+
+.glyphicon-search {
+  color: grey;
+  opacity: 0.50;
+}
+
+.glyphicon-home {
+  font-size: 30px;
+  color: grey;
+  opacity: 0.50;
+  position: absolute;
+  top: 22px;
+  left: 39px;
+}
+
+#psykhe:hover, .glyphicon-search:hover, .glyphicon-home:hover {
+  color: #00c4cc;
+  cursor: pointer;
+}
+
+#psykhe {
+  margin-left: 75px;
+  color: grey;
+  opacity: 0.50;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#row1 {
+  height: 80px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #ebeced;
+}
+
+#form1 {
+  float: right;
+  margin-top: -45px;
+  margin-right: 50px;
+}
+
+#search {
+  height: 38px;
+  width: 276px;
+  font-size: 18px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 5px;
+  padding-left: 40px;
+  color: grey;
+  opacity: 0.50;
+}
+
+#btn1 {
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 290px;
+}
+
+/*index section*/
+
+#index {
+  background-color: #3f4652;
+  margin: 0;
+  height: 810px;
+}
+
+.glyphicon-user {
+  font-size: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+#profile:hover, .glyphicon-user:hover, #public:hover, .glyphicon-comment:hover, #private:hover, .glyphicon-envelope:hover {
+  color: #00c4cc;
+  cursor: pointer;
+}
+
+#profile {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+#profile2 {
+  margin-top: 9px;
+  margin-left: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+#public {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 165px;
+}
+
+.glyphicon-comment {
+  font-size: 40px;
+  color: #fff;
+  margin-left: 7px;
+}
+
+#private {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 270px;
+}
+
+.glyphicon-envelope {
+  font-size: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.public2private2 {
+  font-family: 'PT Sans', sans-serif
+  margin-left: 15px;
 }
