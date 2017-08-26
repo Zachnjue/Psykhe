@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--This meta tag is for device responsiveness-->
     <meta nanme="viewport" content="width=device=width, initial-scale=1.0">
-    <title>Chatroom</title> 
+    <title>Public chatroom</title> 
 
     <!--Googel fonts-->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
@@ -36,35 +36,60 @@
   </script>  
   </head>
   <body>
-    <div class="whole">
-      <div class="col-md-3" id="index">
-        <div id="profile">
-          <i class="glyphicon glyphicon-user"></i>
-          <h5 id="profile2">PROFILE</h5>
-        </div>
-        <div id="public">
-          <i class="glyphicon glyphicon-comment"></i>
+    <div class="container-fluid">
+      <!--navbar-->
+      <div class="row fixed-top" id="row1">
+        <h1 id="psykhe">PSYKHE</h1>
+        <a href="../index.html"><i class="glyphicon glyphicon-home"></i></a>
+        <form id="form1">
+          <input type="text" name="search" value="Search" id="search">
+          <button type="submit" id="btn1"><i class="glyphicon glyphicon-search"></i></button>
+        </form>
+      </div>
+
+      <!--jumbotron section-->
+      <div class="col-md-10" id="back">
+      </div>
+      <div class="col-md-10" id="back2">
+         <div id="public">
+          <a href="public.html"><i class="glyphicon glyphicon-comment"></i></a>
           <h5 class="public2private2">PUBLIC</h5>
         </div>
+        <p id="posline">|</p>
         <div id="private">
-          <i class="glyphicon glyphicon-envelope"></i>
+          <a href="private.html"><i class="glyphicon glyphicon-envelope"></i></a>
           <h5 class="public2private2">PRIVATE</h5>
         </div>
-        <div id="profile3">
+      </div>
+
+      <!--topics/group section-->
+      <div class="col-md-4" id="topics">
+        <div id="header">
+          <h3 id="tp">TOPICS</h3>
+          <i class="glyphicon glyphicon-plus"></i>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="row" id="row1">
-          <h1 id="psykhe">PSYKHE</h1>
-          <a href="../index.html"><i class="glyphicon glyphicon-home"></i></a>
-          <form id="form1">
-            <input type="text" name="search" value="Search" id="search">
-            <button type="submit" id="btn1"><i class="glyphicon glyphicon-search"></i></button>
-          </form>
-        </div>
-        <div class="row">
-        </div>
+
+      <!--add topic section-->
+      <div id="addTopic">
+        <form>
+          <span id="description1">NAME</span>
+          <input type="text" value="           Enter name" id="name">
+          <span id="description2">DESCRIPTION</span>
+          <textarea row="" col="" name="Description">Enter your Description here...</textarea>
+          <input type="submit" value="CREATE"  class="btn" id="create">
+        </form>
       </div>
+
+      <!--comment section-->
+      <div class="col-md-7" id="comment">
+      </div>
+
+      <!--copyright-->
+      <p id="copyright">psyhke v1 @copyright 2017</p>
     </div>
+
+    <!--custom javascript file-->
+    <script type="text/javascript" src="../Js/script.js"></script>
   </body>
 </html>
