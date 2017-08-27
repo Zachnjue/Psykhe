@@ -5,16 +5,43 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="Js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Js/script.js">
+
+    </script>
   </head>
   <body>
     <div class="whole">
 
       <header>
         <ul>
-          <li><a href="#Sign in">Sign In</a></li>
-          <li><a href="#Login">Login</a></li>
+          <li><a href="#SignUp" id="sgnup">Sign Up</a>
+            <!--sign up form-->
+            <div id="unique2">
+              <form>
+                <input type="text" value="Name" class="name">
+                <input type="text" value="Username" class="name">
+                <input type="text" value="Email Address" class="name">
+                <input type="submit" value="SIGN UP"  class="btn submit2">
+              </form>
+            </div>
+          </li>
+          <li><a href="#Login" id="log">Login</a>
+            <!--LOGIN form-->
+            <div id="unique">
+              <form>
+                <input type="text" value="Email Address" class="name">
+                <input type="text" value="Username" class="name1">
+                <input type="submit" value="LOGIN"  class="submit2">
+              </form>
+            </div>
+          </li>
           <li><a href="#About Us">About Us</a></li>
         </ul>
+
+        <!--ABOUT THE OVERLAY
+      <element class="btn" id="btn2" onclick="openNav()">ORDER</element>
+        -->
       </header>
         <div class="bg-warning" id="sec1">
           <p id="wording"> <strong> Welcome to Psykhe <br> A place where your all worries are washed Away </strong></p>
@@ -23,14 +50,29 @@
             <br><br>
             <!--<p>Already signed in Psykhe</p><a href="#Login">Login</a>-->
         </div>
-
-
-
       <footer>
 
         <span>
           <ul id="end">
-            <li><a href="#Support">Support</a></li>
+            <li><a href="#Support">Support</a>
+              <!--popup help
+              <div id="">
+                <p>content</p>
+                <span id="closebtn">&times;</span>
+              </div>-->
+
+              <!--popup support-->
+            <!--  <div id="">
+              	<form action="#" method="Get">
+              	    <input type="text" name="" value="YOUR NAME*" class="form"/><br/>
+              	    <input type="text" name="" value="YOUR EMAIL*" class="form"/><br/>
+              	    <input type="text" name="" value="YOUR PHONE*" class="form"/><br/>
+              	    <textarea rows="" cols="" value="YOUR MESSAGE*" id="textarea"></textarea>
+              	   <input type="submit" value="SEND MESSAGE" class="btn btn-default btn-lg btn-warning" id="button2"/>
+              	</form>
+              	<span id="colsebtn">&times;</span>
+              </div>-->
+            </li>
             <li><a href="#Help">Help</a></li>
             <li><a href="#Blog">Blog</a></li>
           </ul>

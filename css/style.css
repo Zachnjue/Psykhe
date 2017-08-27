@@ -19,6 +19,47 @@ li a {
 li a:hover{
   background-color: white;
 }
+#unique{
+  padding-top: 10px;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 1385px;
+  background-color: white;
+  height: 150px;
+  width: 135px;
+  border-radius: 5px;
+}
+.name{
+  margin-top: 8px;
+  width: 130px;
+  background-color: #3f4652;
+  color: white;
+}
+.name1{
+  margin-top: 10px;
+  width: 130px;
+  background-color: #3f4652;
+  color: white;
+}
+.submit2{
+  margin-top: 15px;
+  width: 130px;
+  background-color: #3f4652;
+  color: white;
+}
+#unique2{
+  display: none;
+  padding-top: 10px;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 1385px;
+  background-color: white;
+  height: 150px;
+  width: 135px;
+  border-radius: 5px;
+}
 
 /*Footer Design*/
 footer{
@@ -40,7 +81,7 @@ footer{
 /*Middle part*/
 
 #sec1{
-  height: 550px;
+  height: 599px;
   background-color: white;
   background-image: url(../img/brain.jpg);
 }
@@ -63,6 +104,4 @@ left: 600px;
   position: absolute;
   top: 400px;
   left: 700px;
-
-
 }
