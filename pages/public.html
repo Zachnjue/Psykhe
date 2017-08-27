@@ -40,9 +40,9 @@
       <!--navbar-->
       <div class="row fixed-top" id="row1">
         <h1 id="psykhe">PSYKHE</h1>
-        <a href="../index.html"><i class="glyphicon glyphicon-home"></i></a>
+        <a href="../index.html"><i class="glyphicon glyphicon-home" data-toggle="tooltip" data-placement="right" title="Go to Home"></i></a>
         <form id="form1">
-          <input type="text" name="search" value="Search" id="search">
+          <input type="text" name="search" value="Search group/person" id="search">
           <button type="submit" id="btn1"><i class="glyphicon glyphicon-search"></i></button>
         </form>
       </div>
@@ -52,12 +52,12 @@
       </div>
       <div class="col-md-10" id="back2">
          <div id="public">
-          <a href="public.html"><i class="glyphicon glyphicon-comment"></i></a>
+          <a href="public.html"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="See Popular Topics"></i></a>
           <h5 class="public2private2">PUBLIC</h5>
         </div>
         <p id="posline">|</p>
         <div id="private">
-          <a href="private.html"><i class="glyphicon glyphicon-envelope"></i></a>
+          <a href="private.html"><i class="glyphicon glyphicon-envelope" data-toggle="tooltip" data-placement="top" title="Ask a Professional"></i></a>
           <h5 class="public2private2">PRIVATE</h5>
         </div>
       </div>
@@ -66,7 +66,7 @@
       <div class="col-md-4" id="topics">
         <div id="header">
           <h3 id="tp">TOPICS</h3>
-          <i class="glyphicon glyphicon-plus"></i>
+          <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Create a topic"></i>
         </div>
       </div>
 
@@ -74,7 +74,7 @@
       <div id="addTopic">
         <form>
           <span id="description1">NAME</span>
-          <input type="text" value="           Enter name" id="name">
+          <input type="text" value="   Enter name" id="name">
           <span id="description2">DESCRIPTION</span>
           <textarea row="" col="" name="Description">Enter your Description here...</textarea>
           <input type="submit" value="CREATE"  class="btn" id="create">
@@ -83,6 +83,27 @@
 
       <!--comment section-->
       <div class="col-md-7" id="comment">
+        <div id="topicHeader">
+          <h3 id="topicH"></h3>
+          <!--modal-->
+          <i class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal" data-placement="top" title="post a message" id="env"></i>
+          <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="modal">
+                  <button type="button" class="close" data-dismiss="modal" id="btnm">&times;</button>
+                  <h3 class="modal-title footerc mmargin" id="h3">Post a Message</h3>
+                  <form id="form1">
+                    <textarea row="" col="" name="message" id="message">Write Something....</textarea>
+                    <button type="submit" class="btn" id="send">POST<i class="glyphicon glyphicon-send"></i></button>
+                  </form>
+                  <button type="button" class="close btn" data-dismiss="modal" id="cancel">CANCEL</button>
+                </div>
+              </div>
+            </div>      
+        </div>
       </div>
 
       <!--copyright-->

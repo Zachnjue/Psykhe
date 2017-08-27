@@ -280,7 +280,7 @@ left: 600px;
   font-size: 22px;
 }
 
-#tp:hover, .glyphicon-plus:hover, #create:hover {
+.glyphicon-plus:hover, #create:hover {
   color: #00c4cc;
   cursor: pointer;
 }
@@ -373,12 +373,102 @@ textarea {
 
 /*comment section*/
 #comment {
-  background-color: red;
+  background-color: #FFFFFF;
   width: 880px;
   height: 600px;
   margin-top: 23px;
   margin-left: 23px;
   margin-bottom: 43px;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
   border-radius: 5px;
+  border-width: 2px;
+  border-color: rgb(192,192,192);
 }
 
+#topicHeader {
+  background-color: #58244b;
+  height: 70px;
+  width:878px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#env:hover, #btnm:hover {
+  color: #00c4cc;
+  cursor: pointer;
+}
+
+#env {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+#topicH {
+  margin-left: 40px;
+  color: #FFFFFF;
+}
+
+#modal {
+  height: 400px;
+  width: 650px;
+}
+
+#btnm {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#h3 {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  font-color: #333;
+}
+
+#message {
+  position: absolute;
+  top: 90px;
+  min-height: 200px;
+  min-width: 545px;
+  overflow: hidden;
+}
+
+#send {
+  position: absolute;
+  top: 320px;
+  left: 50px;
+  height: 49px;
+  width: 160px;
+  font-size: 23px;
+  color: #FFFFFF;
+  background-color: #58244b;
+}
+
+.glyphicon-send {
+  position: absolute;
+  top: 12px;
+  left: 110px;
+  color: #FFFFFF
+}
+
+#cancel {
+  position: absolute;
+  top: 320px;
+  left: 230px;
+  height: 49px;
+  width: 160px;
+  font-size: 23px;
+  color: #333;
+  background-color: #FFFFFF;
+  border: 2px solid rgb(192,192,192);
+  opacity: 1;
+}
