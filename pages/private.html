@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <!--This meta tag is for device responsiveness-->
+    <meta nanme="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Private chatroom</title> 
+
+    <!--Googel fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/c0dfec8a89.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--custom stylesheet-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+
+     <!--javascript--><!--putting script files down here to make the website appear to be loading faster because js is responsible for fuctionality-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">    
+    </script>
+
+    <!-- Latest compiled and minified JavaScript make sure to put jquery fast because the js is dependant on that-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>  
+  </head>
+  <body>
+    <div class="container-fluid" id="container-fluid3">
+      <!--navbar-->
+      <div class="row fixed-top" id="row1">
+        <h1 id="psykhe">PSYKHE</h1>
+        <a href="../index.html"><i class="glyphicon glyphicon-home" data-toggle="tooltip" data-placement="right" title="Go to Home"></i></a>
+        <form id="form1">
+          <input type="text" name="search" value="Search group/person" id="search">
+          <button type="submit" id="btn1"><i class="glyphicon glyphicon-search"></i></button>
+        </form>
+      </div>
+
+      <!--jumbotron section-->
+      <div class="col-md-10" id="back3">
+      </div>
+      <div class="col-md-10" id="back2">
+        <div id="public">
+          <a href="public.html"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="See Popular Topics"></i></a>
+          <h5 class="public2private2">PUBLIC</h5>
+        </div>
+        <p id="posline">|</p>
+        <div id="private">
+          <a href="private.html"><i class="glyphicon glyphicon-envelope" data-toggle="tooltip" data-placement="top" title="Ask a Professional"></i></a>
+          <h5 class="public2private2">PRIVATE</h5>
+        </div>
+      </div>
+
+      <!--psychologists section-->
+      <div class="col-md-4" id="topics2">
+        <div id="header2">
+          <h3 id="tp">PYSCHOLOGY FRATERNITY</h3>
+          <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Add Pyschologist" id="plus2"></i>
+        </div>
+      </div>
+
+      <!--add professional section-->
+      <div id="addTopic2">
+        <form>
+          <span id="description12">NAME</span>
+          <input type="text" value="   Enter name" id="name2">
+          <span id="email">EMAIL</span>
+          <input type="text" value="Email address" id="email2">
+          <span id="description3">ABOUT</span>
+          <textarea row="" col="" name="Description" id="textarea2">Enter your Description here...</textarea>
+          <input type="submit" value="CREATE"  class="btn" id="create2" onClick="send()">
+        </form>
+      </div>
+    </div>
+
+    <!--profile section-->
+      <div class="col-md-7" id="comment2">
+        <div id="topicHeader">
+          <h3 id="topicH"></h3>
+          <!--modal-->
+          <i class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal" data-placement="top" title="send To Multiple People" id="env"></i>
+          <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="modal">
+                  <button type="button" class="close" data-dismiss="modal" id="btnm">&times;</button>
+                  <h3 class="modal-title footerc mmargin" id="h3">Post a Message</h3>
+                  <form id="form1">
+                    <textarea row="" col="" name="message" id="message3">Write Your Message to all Psychologists here....</textarea>
+                    <button type="submit" class="btn" id="send">POST<i class="glyphicon glyphicon-send"></i></button>
+                  </form>
+                  <button type="button" class="close btn" data-dismiss="modal" id="cancel">CANCEL</button>
+                </div>
+              </div>
+            </div>      
+        </div>
+        <h3 id="proname">NAME</h3>
+        <span id="proName" class="word">Neville Oronni</span>
+        <h3 id="proemail">EMAIL ADDRESS</h3>
+        <span id="proEmail" class="word">nevooronni@gmail.com</span>
+        <h3 id=proabout>ABOUT PSYCHOLOGIST</h3>
+        <p id="proAbout" class="word">n 1825 Kappa Alpha Society, the oldest extant fraternity to retain its social characteristic, was established at Union College. In 1827, Sigma Phi and Delta Phi were also founded at the same institution, creating the Union Triad.</p>
+        <!--second modal-->
+        <button type="button" class="btn" id="sendSpecific" data-toggle="modal" data-target="#myModal2" data-placement="top" title="Contact This Person Directly">MESSAGE</button>
+        <!-- Modal2 -->
+            <div id="myModal2" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content2-->
+                <div class="modal-content" id="modal">
+                  <button type="button" class="close" data-dismiss="modal" id="btnm">&times;</button>
+                  <h3 class="modal-title footerc mmargin" id="h3">Post a Message</h3>
+                  <form id="form1">
+                    <textarea row="" col="" name="message" id="message2">Write Your Direct Message Here....</textarea>
+                    <button type="submit" class="btn" id="send">POST<i class="glyphicon glyphicon-send"></i></button>
+                  </form>
+                  <button type="button" class="close btn" data-dismiss="modal" id="cancel">CANCEL</button>
+                </div>
+              </div>
+            </div>      
+      </div>
+
+
+      <!--copyright-->
+      <p id="copyright2">psyhke v1 @copyright 2017</p>
+    </div>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBI7IwayFxkFBQ3cX_rfOjIO5dNWsW1HjY",
+        authDomain: "psyhke-42a39.firebaseapp.com",
+        databaseURL: "https://psyhke-42a39.firebaseio.com",
+        projectId: "psyhke-42a39",
+        storageBucket: "psyhke-42a39.appspot.com",
+        messagingSenderId: "954249701954"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!--custom javascript file-->
+    <script type="text/javascript" src="../Js/script.js"></script>  
+  </body>
+</html>
