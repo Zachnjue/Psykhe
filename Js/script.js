@@ -121,7 +121,7 @@ var submitClick = function submitClick() {
 var database = firebase.database();
 
 //add subscriber email
-function addSubscriber() {
+/*function addSubscriber() {
 	var subscriberEmail = addSubscriber.value;
 
 	//reference database child
@@ -131,7 +131,7 @@ function addSubscriber() {
 	var data = {Name: subscriberEmail};
 
 	ref.push(data);
-};
+};*/
 
 //addPsychologist
 function send() {
