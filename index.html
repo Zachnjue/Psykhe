@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PSYKHE</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+ <head>
+    <meta charset="utf-8">
+    <!--This meta tag is for device responsiveness-->
+    <meta nanme="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Landing Page</title> 
+
+    <!--Googel fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/c0dfec8a89.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--custom stylesheet-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+     <!--javascript--><!--putting script files down here to make the website appear to be loading faster because js is responsible for fuctionality-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">    
+    </script>
+
+    <!-- Latest compiled and minified JavaScript make sure to put jquery fast because the js is dependant on that-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>  
   </head>
   <body>
-    <div class="whole">
-
-      <header>
-        <ul>
-          <li><a href="#Sign in">Sign In</a></li>
-          <li><a href="#Login">Login</a></li>
-          <li><a href="#About Us">About Us</a></li>
-        </ul>
-      </header>
-        <div class="bg-warning" id="sec1">
-          <p id="wording"> <strong> Welcome to Psykhe <br> A place where your all worries are washed Away </strong></p>
-          <button class="btn" type="button" onclick="alert('sign up to access the Best Advice')" name="Sign Up" id="Signup">
-            Sign Up. it's Free</button>
-            <br><br>
-            <!--<p>Already signed in Psykhe</p><a href="#Login">Login</a>-->
+     <!--navbar-->
+    <div class="nav">
+      <nav class="navbar-default navbar-inverse navbar-fixed-top navbar-custom">
+        <div class="container">
+          <div class="navbar-text pull-left"><li class="navbar-brand text-muted" href="index.html">PYSHKE</li></div>
+          <div class="navbar-text pull-right"><button class="btn" id="btn">SIGN UP</button></div>
         </div>
-
-
-
-      <footer>
-
-        <span>
-          <ul id="end">
-            <li><a href="#Support">Support</a></li>
-            <li><a href="#Help">Help</a></li>
-            <li><a href="#Blog">Blog</a></li>
-          </ul>
-        </span>
-        <span class="social-icons2">
-          <a href="#" class="facebook w3l" title="Go to Our Facebook Page"><i class="fa w3l fa-facebook-square" aria-hidden="true"></i></a>
-          <a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a>
-          <a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a>
-          <a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a>
-          <a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a>
-        </span>
-        <span>Copyright &copy; PSYKHE Inc. All rights reserved</span>
-
-      </footer>
-
+      </nav>
     </div>
+    
+    <!--sign up form-->
+    <div id="unique2">
+      <form>
+        <input type="text" value="Name" class="name">
+        <input type="text" value="Username" class="name">
+        <input type="text" value="Email Address" class="name">
+        <input type="submit" value="SIGN UP"  class="btn submit2">
+      </form>
+    </div>  
+
+    <!--jumbotron-->  
+    <div class="jumbotron" id="jumbotron2">
+      <h1 class="color text-center" id="heading">WHO WE ARE</h1>
+      <p id="paragraph">Psyhke Lets you connect with other people<br/> who share similar sturggles around<br/> pyschological health, we are stronger as a unit.</p>
+
+      <!--form-->
+      <div id="orderform">
+        <form id="formofform">
+          <h3 id="order">GET STARTED</h3>
+          <input type="text" value=" Email Address" class="field" id="one">
+          <input type="submit" value="SUBSCRIBE"  class="btn formbtn">
+        </form>
+      </div>
+
+
+
+      <!--footer-->
+    <p class="info2">© 2017 All Rights Reserved | Design by <span id="span">Nevo/Zach</span></p>
+    <span class="social-icons2">
+        <a href="#" class="facebook w3l" title="Go to Our Facebook Page"><i class="fa w3l fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a>
+        <a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a>
+    </span>
+  </div>
+    
+    </div>
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBI7IwayFxkFBQ3cX_rfOjIO5dNWsW1HjY",
+        authDomain: "psyhke-42a39.firebaseapp.com",
+        databaseURL: "https://psyhke-42a39.firebaseio.com",
+        projectId: "psyhke-42a39",
+        storageBucket: "psyhke-42a39.appspot.com",
+        messagingSenderId: "954249701954"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>

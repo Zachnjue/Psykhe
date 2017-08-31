@@ -36,7 +36,7 @@
   </script>  
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-fluid3">
       <!--navbar-->
       <div class="row fixed-top" id="row1">
         <h1 id="psykhe">PSYKHE</h1>
@@ -64,22 +64,22 @@
 
       <!--psychologists section-->
       <div class="col-md-4" id="topics2">
-        <div id="header">
+        <div id="header2">
           <h3 id="tp">PYSCHOLOGY FRATERNITY</h3>
-          <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Add Pyschologist"></i>
+          <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Add Pyschologist" id="plus2"></i>
         </div>
       </div>
 
       <!--add professional section-->
-      <div id="addTopic">
+      <div id="addTopic2">
         <form>
-          <span id="description1">NAME</span>
+          <span id="description12">NAME</span>
           <input type="text" value="   Enter name" id="name2">
           <span id="email">EMAIL</span>
           <input type="text" value="Email address" id="email2">
           <span id="description3">ABOUT</span>
           <textarea row="" col="" name="Description" id="textarea2">Enter your Description here...</textarea>
-          <input type="submit" value="CREATE"  class="btn" id="create2">
+          <input type="submit" value="CREATE"  class="btn" id="create2" onClick="send()">
         </form>
       </div>
     </div>
@@ -135,9 +135,23 @@
 
 
       <!--copyright-->
-      <p id="copyright">psyhke v1 @copyright 2017</p>
+      <p id="copyright2">psyhke v1 @copyright 2017</p>
     </div>
 
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBI7IwayFxkFBQ3cX_rfOjIO5dNWsW1HjY",
+        authDomain: "psyhke-42a39.firebaseapp.com",
+        databaseURL: "https://psyhke-42a39.firebaseio.com",
+        projectId: "psyhke-42a39",
+        storageBucket: "psyhke-42a39.appspot.com",
+        messagingSenderId: "954249701954"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!--custom javascript file-->
     <script type="text/javascript" src="../Js/script.js"></script>  

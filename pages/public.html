@@ -36,7 +36,7 @@
   </script>  
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="#container-fluid">
       <!--navbar-->
       <div class="row fixed-top" id="row1">
         <h1 id="psykhe">PSYKHE</h1>
@@ -64,10 +64,14 @@
 
       <!--topics/group section-->
       <div class="col-md-4" id="topics">
-        <div id="header">
-          <h3 id="tp">TOPICS</h3>
-          <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Create a topic"></i>
+        <div id="surround">
+          <span id="dataHeading"></span>
+          <p id="dataDescription"></p>
         </div>
+      </div>
+      <div id="header">
+        <h3 id="tp">TOPICS</h3>
+        <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Create a topic"></i>
       </div>
 
       <!--add topic section-->
@@ -76,8 +80,8 @@
           <span id="description1">NAME</span>
           <input type="text" value="   Enter name" id="name">
           <span id="description2">DESCRIPTION</span>
-          <textarea row="" col="" name="Description">Enter your Description here...</textarea>
-          <input type="submit" value="CREATE"  class="btn" id="create">
+          <textarea row="" col="" name="Description" id="des">Enter your Description here...</textarea>
+          <input type="submit" value="CREATE"  class="btn" id="create" onClick="submitClick()">
         </form>
       </div>
 
@@ -109,6 +113,21 @@
       <!--copyright-->
       <p id="copyright">psyhke v1 @copyright 2017</p>
     </div>
+    
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBI7IwayFxkFBQ3cX_rfOjIO5dNWsW1HjY",
+        authDomain: "psyhke-42a39.firebaseapp.com",
+        databaseURL: "https://psyhke-42a39.firebaseio.com",
+        projectId: "psyhke-42a39",
+        storageBucket: "psyhke-42a39.appspot.com",
+        messagingSenderId: "954249701954"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!--custom javascript file-->
     <script type="text/javascript" src="../Js/script.js"></script>
