@@ -1,5 +1,9 @@
 //custom js file
 
+//add email input for subscribe list 
+//var addSubscriber = document.getElementById("formbtn");
+//var submitSubscriber = document.getElementById("submitSubscriber");
+
 //get input form addPyschologist fields 
 var addPyshName = document.getElementById("name2");
 var addEmail = document.getElementById("email2");
@@ -25,7 +29,7 @@ var paragaraph = document.getElementById("dataDescription");
 //};
 
 //reference for retrieving data in realtime
-var firebaseHeadingRef = firebase.database().ref().child("name");
+/*var firebaseHeadingRef = firebase.database().ref().child("name");
 var firebaseDescriptionRef = firebase.database().ref().child("description");
 
 firebaseHeadingRef.on("value", function(datasnapshot) {//the paremeter datasnapshot is the variable that is going to store the retrieved data
@@ -35,10 +39,36 @@ firebaseHeadingRef.on("value", function(datasnapshot) {//the paremeter datasnaps
 
 firebaseDescriptionRef.on("value", function(datasnapshot) {
   fireDescription.innerText = datasnapshot.val();
+});*/
+
+$("#orderform").on("submit3", event => {
+        event.preventDefault();
+      //  var name=$("#js-name").val();
+       var email=$("#one").val();
+      //  var salsa=$("#js-salsa").val();
+      //  var yoga=$("#js-yoga").val();
+      //  var aerobics=$("#js-aerobics").val();
+       console.log(email);
+       firebase.database().ref('Subscribe')
+       /*firebase.auth().createUserWithEmailAndPassword(email, password)
+       .then(user => {
+         firebase.database().ref('Subscribe').push({email,password,});
+         })
+         .catch(function(error) {
+         // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+         // ...
+         });
+         firebase.auth().signInWithEmailAndPassword(email,password)
+          .then(user => {
+          firebase.database().ref('Subscribe').push({email,password
+           });
+         .catch(error =>{
+          console.log(error);
+       });
+    });*/
 });
-
-
-
 
 
 
@@ -90,8 +120,18 @@ var submitClick = function submitClick() {
 
 var database = firebase.database();
 
+//add subscriber email
+function addSubscriber() {
+	var subscriberEmail = addSubscriber.value;
 
+	//reference database child
+	var ref = database.ref("Email");
 
+	//push data to database child
+	var data = {Name: subscriberEmail};
+
+	ref.push(data);
+};
 
 //addPsychologist
 function send() {
@@ -138,6 +178,7 @@ ref.push(data);
 
 //front-end 
 $(document).ready(function () {
+
 	$("i.glyphicon-plus").click(function() {//add topic button functionality
     $("#addTopic").slideToggle();
    
